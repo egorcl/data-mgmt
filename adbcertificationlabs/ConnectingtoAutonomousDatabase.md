@@ -1,12 +1,12 @@
 ![](./media/adbtitle.png)
 # Lab 1:  Connecting to Autonomous Database
 
-## Objectives
+## Table of Contents
 
-- Learn how to download client credentials for your ATP instance
-- Explore credentials wallet file information
-- Connect to your ATP instance with SQL Developer
-- Connect to your ATP instance with Oracle ML Notebooks
+- [Module 1: Learn how to download client credentials for your ATP instance](#module-1--downloading-the-client-credentials-wallet)
+- Module 2: Explore credentials wallet file information
+- Module 3: Connect to your ATP instance with SQL Developer
+- Module 4: Connect to your ATP instance with Oracle ML Notebooks
 
 ## Module 1:  Downloading the Client Credentials (wallet)
 
@@ -21,6 +21,7 @@ service console. Continuing from where we left off in the previous lab,
 select **Download Client Credentials:**
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.10%20PM.png](./media/image2.png)
+**Figure 1:** *Client Credentials*
 
 3. Specify a password of your choice for the wallet. Note that this
 password is separate from the **Admin** user password created earlier
