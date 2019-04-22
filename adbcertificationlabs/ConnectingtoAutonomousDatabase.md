@@ -86,27 +86,16 @@ top left of the SQL Developer homepage.
 
 4. Fill in the connection details as below:
 
-```Connection Name: admin
+**Connection Name:** `admin`
+**Username:** `admin`
+**Password:** *The admin password you specified during database provisioning*
+**Connection Type:** *Cloud Wallet*
+**Configuration File:** Enter the full path for the wallet file you downloaded before (in my example wallet\_ATPXWEEK.zip), or click the Browse button to point to the location of the file.
 
-Username: admin
-
-Password: The admin password you specified during database
-provisioning
-
-Connection Type: Cloud Wallet
-
-Configuration File: Enter the full path for the wallet file you
-downloaded before (in my example wallet\_ATPXWEEK.zip), or click the
-Browse button to point to the location of the file.
-```
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.24.09%20PM.png](./media/image9.png)
 
-```Service: **select the service configured specifically for ATP
-services, the **$dbname\_TP** service, for you database. Many services
-may be listed but make sure you pick the one for with the database name
-you created. In this example its **atpxweek\_TP.
-```
+**Service:** *select the service configured specifically for ATP services ( **$dbname\_TP** service) for you database. Many services may be listed but make sure you pick the one for with the database name you created. In this example its **atpxweek\_TP.
 
 5. Test your connection by clicking the **Test** button, if it succeeds
 
@@ -132,31 +121,30 @@ are connected to your database, per the last step on the previous
 process.
 
 ```
-    SELECT channel\_desc, TO\_CHAR(SUM(amount\_sold),'9,999,999,999')
+    SELECT channel_desc, TO_CHAR(SUM(amount_sold),'9,999,999,999')
     SALES$,  
-    RANK() OVER (ORDER BY SUM(amount\_sold)) AS default\_rank,  
-    RANK() OVER (ORDER BY SUM(amount\_sold) DESC NULLS LAST) AS
-    custom\_rank  
+    RANK() OVER (ORDER BY SUM(amount_sold)) AS default_rank,  
+    RANK() OVER (ORDER BY SUM(amount_sold) DESC NULLS LAST) AS
+    custom_rank  
     FROM sh.sales, sh.products, sh.customers, sh.times, sh.channels,
     sh.countries  
-    WHERE sales.prod\_id=products.prod\_id AND
-    sales.cust\_id=customers.cust\_id  
-    AND customers.country\_id = countries.country\_id AND
-    sales.time\_id=times.time\_id  
-    AND sales.channel\_id=channels.channel\_id  
-    AND times.calendar\_month\_desc IN ('2000-09', '2000-10')  
-    AND country\_iso\_code='US'  
-    GROUP BY channel\_desc;
+    WHERE sales.prod_id=products.prod_id AND
+    sales.cust_id=customers.cust_id  
+    AND customers.country_id = countries.country_id AND
+    sales.time_id=times.time_id  
+    AND sales.channel_id=channels.channel_id  
+    AND times.calendar_month_desc IN ('2000-09', '2000-10')  
+    AND country_iso_code='US'  
+    GROUP BY channel_desc;
 ```
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.36%20PM.png](./media/image11.png)
 
-And you will see the result of your query on the bottom **Script
-Output** section
+11. And you will see the result of your query on the bottom **Script Output** section
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.45%20PM.png](./media/image12.png)
 
-## You have successfully connected and run an operation against ATP with SQL Developer. We will use SQL Developer throughout other labs. 
+**You have successfully connected and run an operation against ATP with SQL Developer. We will use SQL Developer throughout other labs. **
 
 ## Connecting to the database using OML
 
@@ -191,31 +179,30 @@ users.
 Once you have a database created in ATP, we need to create an OML user,
 which is equivalent to creating a database user.
 
-If you are not already logged into the ATP Service Console, in the main
+1. If you are not already logged into the ATP Service Console, in the main
 ATP service page select Service Console:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.53%20PM.png](./media/image13.png)
 
-On the next page log in with your ADMIN ATP user name/password and click
-**Sign in:**
+2. On the next page log in with your ADMIN ATP user name/password and click **Sign in:**
 
-Select Administration from the top left and once on the Administration
+3. Select Administration from the top left and once on the Administration
 page select **Manage Oracle ML Users**:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.00%20PM.png](./media/image14.png)
 
-If required (you may not see this page), log into the OML Administration
+4. If required (you may not see this page), log into the OML Administration
 console which is different than the database administration console but
 uses the same ADMIN account created when the database was created. Fill
 in the **ADMIN password** and click **Sign In**
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.08%20PM.png](./media/image15.png)
 
-Next create the actual OML user. Click the **Create** button:
+5. Next create the actual OML user. Click the **Create** button:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.14%20PM.png](./media/image16.png)
 
-This will open up the user creation page, fill in the information for
+6. This will open up the user creation page, fill in the information for
 your new OML user and click **Create**. This is a completely new user
 account that will be used anytime you want to access OML. Make sure you
 keep this information. Notice that you can specify an email address
@@ -225,7 +212,7 @@ OML.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.21%20PM.png](./media/image17.png)
 
-**You now have a new OML user\!** To connect to OML as your new user,
+7. **You now have a new OML user\!** To connect to OML as your new user,
 click on the Home Icon on the top right, pointed at by the arrow (or the
 link you received by email). This will open up a new tab with the OML
 home page. This time log in with the user you just created.
@@ -234,19 +221,21 @@ home page. This time log in with the user you just created.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.36%20PM.png](./media/image19.png)
 
-You are connected as an OML Notebook user. Run the same query we ran in
+8. You are connected as an OML Notebook user. Run the same query we ran in
 SQL Developer now in OML. Select **Run SQL Scripts** from Quick Actions:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.44%20PM.png](./media/image20.png)
 
-Copy the same SQL statement you ran in SQL Developer above and paste it
+9. Copy the same SQL statement you ran in SQL Developer above and paste it
 right under the **%script** statement then select the **Run all
 Paragraphs** icon, as shown below:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.49%20PM.png](./media/image21.png)
 
-The results are shown below (and same as on SQL Developer):
+10. The results are shown below (and same as on SQL Developer):
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.55%20PM.png](./media/image22.png)
 
-## You have successfully connected and run an operation against ATP with Oracle OML. We will use OML in other labs.
+** You have successfully connected and run an operation against ATP with Oracle OML. We will use OML in other labs.**
+
+***END OF LAB***
