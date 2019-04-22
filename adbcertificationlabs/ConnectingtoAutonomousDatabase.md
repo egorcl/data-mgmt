@@ -1,3 +1,4 @@
+![](./media/adbtitle.png)
 # Lab 1:  Connecting to Autonomous Database
 
 ## Objectives
