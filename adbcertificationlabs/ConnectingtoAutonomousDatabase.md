@@ -3,12 +3,14 @@
 
 ## Table of Contents
 
-- [Module 1: Learn how to download client credentials for your ATP instance](#module-1--downloading-the-client-credentials-wallet)
-- Module 2: Explore credentials wallet file information
-- Module 3: Connect to your ATP instance with SQL Developer
-- Module 4: Connect to your ATP instance with Oracle ML Notebooks
+- [Module 1: Download Client Credentials](#module-1--download-the-client-credentials-wallet)
+- [Module 2: Explore credentials wallet file information](#module-2--examining-the-wallet-file)
+- [Module 3: Connect to your ATP instance with SQL Developer](#module-3--connecting-to-the-database-using-sql-developer)
+- [Module 4: Connect to your ATP instance with Oracle ML Notebooks](#module-4--connecting-to-the-database-using-oracle-machine-learning-oml)
 
-## Module 1:  Downloading the Client Credentials (wallet)
+***** 
+
+## Module 1:  Download the Client Credentials (wallet)
 
 1. The connection wallet provides the only authentication information that
 can be used to connect to your ATP database. This wallet must be
@@ -21,7 +23,7 @@ service console. Continuing from where we left off in the previous lab,
 select **Download Client Credentials:**
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.10%20PM.png](./media/image2.png)
-**Figure 1:** *Client Credentials*
+Figure 1
 
 3. Specify a password of your choice for the wallet. Note that this
 password is separate from the **Admin** user password created earlier
@@ -39,6 +41,10 @@ Details page to download the credentials:
 connection strings be copied from (more on this in other modules)
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.44%20PM.png](./media/image5.png)
+
+[Back to Top](#table-of-contents)
+
+***** 
 
 ## Module 2:  Examining the Wallet File
 
@@ -67,6 +73,10 @@ contained in the wallet. The files used in the labs are:
 
 4.  **ojdbc.properties** – points to the location of the wallet for jdbc
     connections
+    
+[Back to Top](#table-of-contents)   
+
+***** 
 
 ## Module 3:  Connecting to the Database using SQL Developer 
 
@@ -147,6 +157,9 @@ process.
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.45%20PM.png](./media/image12.png)
 
 **You have successfully connected and run an operation against ATP with SQL Developer. We will use SQL Developer throughout other labs.**
+
+[Back to Top](#table-of-contents) 
+***** 
 
 ## Module 4:  Connecting to the Database using Oracle Machine Learning (OML)
 
@@ -241,3 +254,5 @@ Paragraphs** icon, as shown below:
 **You have successfully connected and run an operation against ATP with Oracle OML. We will use OML in other labs.**
 
 ***END OF LAB***
+
+[Back to Top](#table-of-contents)   
