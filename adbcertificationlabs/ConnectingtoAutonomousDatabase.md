@@ -12,32 +12,34 @@
 
 ## Module 1:  Download the Client Credentials (wallet)
 
-1. The connection wallet provides the only authentication information that
+The connection wallet provides the only authentication information that
 can be used to connect to your ATP database. This wallet must be
 downloaded to the client that will be connecting to the database. The
 wallet can be downloaded from two locations, the Database Details page
 or the Service Console
 
-2. The wallet is downloaded from the **Administration** page in the ATP
+1. The wallet is downloaded from the **Administration** page in the ATP
 service console. Continuing from where we left off in the previous lab,
 select **Download Client Credentials:**
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.10%20PM.png](./media/image2.png)
-Figure 1
+<p align="center">Figure 1-1</p>
 
-3. Specify a password of your choice for the wallet. Note that this
+2. Specify a password of your choice for the wallet. Note that this
 password is separate from the **Admin** user password created earlier
 (but the same password can be used). Make sure you know where the file
 gets downloaded to so you can find it on your system.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.30%20PM.png](./media/image3.png)
+<p align="center">Figure 1-2</p>
 
-4. **Alternatively** use the DB Connection button in the main Database
+3. **Alternatively** use the DB Connection button in the main Database
 Details page to download the credentials:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.36%20PM.png](./media/image4.png)
+<p align="center">Figure 1-3</p>
 
-5. This step opens up a screen where the wallet can be downloaded as well as
+4. This step opens up a screen where the wallet can be downloaded as well as
 connection strings be copied from (more on this in other modules)
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.44%20PM.png](./media/image5.png)
@@ -57,6 +59,7 @@ directory (using a zip utility, usually by right clicking on the file),
 you will find the following files:
 
 ![](./media/image6.png)
+<p align="center">Figure 2-1</p>
 
 4. There are 4 files you will be working with during the different labs.
 Some tools use the wallet file (.zip) and some use specific files
@@ -91,10 +94,12 @@ steps.
 top left of the SQL Developer homepage.
 
 ![](./media/image7.png)
+<p align="center">Figure 3-1</p>
 
 3. The new Database Connection screen will appear:
 
 ![](./media/image8.png)
+<p align="center">Figure 3-2</p>
 
 4. Fill in the connection details as below:
 
@@ -106,6 +111,7 @@ top left of the SQL Developer homepage.
 
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.24.09%20PM.png](./media/image9.png)
+<p align="center">Figure 3-3</p>
 
 **Service:** *select the service configured specifically for ATP services ( **$dbname\_TP** service) for you database. Many services may be listed but make sure you pick the one for with the database name you created. In this example its **atpxweek\_TP.
 
@@ -120,6 +126,7 @@ your connection it will appear on the list of connections on the top
 left corner of the main dashboard, under connections.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.02%20PM.png](./media/image10.png)
+<p align="center">Figure 3-4</p>
 
 9. Now that you are connected run test a query. The ATP (or ADW) database
 you created contains the sample Oracle Sales History (SH) schema, we
@@ -151,10 +158,12 @@ process.
 ```
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.36%20PM.png](./media/image11.png)
+<p align="center">Figure 3-4</p>
 
 11. And you will see the result of your query on the bottom **Script Output** section
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.45%20PM.png](./media/image12.png)
+<p align="center">Figure 3-5</p>
 
 **You have successfully connected and run an operation against ATP with SQL Developer. We will use SQL Developer throughout other labs.**
 
@@ -198,6 +207,7 @@ which is equivalent to creating a database user.
 ATP service page select Service Console:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.53%20PM.png](./media/image13.png)
+<p align="center">Figure 4-1</p>
 
 2. On the next page log in with your ADMIN ATP user name/password and click **Sign in:**
 
@@ -205,6 +215,7 @@ ATP service page select Service Console:
 page select **Manage Oracle ML Users**:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.00%20PM.png](./media/image14.png)
+<p align="center">Figure 4-2</p>
 
 4. If required (you may not see this page), log into the OML Administration
 console which is different than the database administration console but
@@ -212,10 +223,12 @@ uses the same ADMIN account created when the database was created. Fill
 in the **ADMIN password** and click **Sign In**
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.08%20PM.png](./media/image15.png)
+<p align="center">Figure 4-3</p>
 
 5. Next create the actual OML user. Click the **Create** button:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.14%20PM.png](./media/image16.png)
+<p align="center">Figure 4-4</p>
 
 6. This will open up the user creation page, fill in the information for
 your new OML user and click **Create**. This is a completely new user
@@ -226,6 +239,7 @@ emailed to you. This will help you later when you need to reconnect to
 OML.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.21%20PM.png](./media/image17.png)
+<p align="center">Figure 4-5</p>
 
 7. **You now have a new OML user\!** To connect to OML as your new user,
 click on the Home Icon on the top right, pointed at by the arrow (or the
@@ -233,23 +247,29 @@ link you received by email). This will open up a new tab with the OML
 home page. This time log in with the user you just created.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.27%20PM.png](./media/image18.png)
+<p align="center">Figure 4-6</p>
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.36%20PM.png](./media/image19.png)
+<p align="center">Figure 4-7</p>
+
 
 8. You are connected as an OML Notebook user. Run the same query we ran in
 SQL Developer now in OML. Select **Run SQL Scripts** from Quick Actions:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.44%20PM.png](./media/image20.png)
+<p align="center">Figure 4-8</p>
 
 9. Copy the same SQL statement you ran in SQL Developer above and paste it
 right under the **%script** statement then select the **Run all
 Paragraphs** icon, as shown below:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.49%20PM.png](./media/image21.png)
+<p align="center">Figure 4-9</p>
 
 10. The results are shown below (and same as on SQL Developer):
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.55%20PM.png](./media/image22.png)
+<p align="center">Figure 4-10</p>
 
 **You have successfully connected and run an operation against ATP with Oracle OML. We will use OML in other labs.**
 
