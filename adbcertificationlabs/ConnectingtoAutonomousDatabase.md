@@ -1,13 +1,13 @@
-# Connecting to Autonomous Database
+# Lab 1:  Connecting to Autonomous Database
 
 ## Objectives
 
-* Learn how to download client credentials for your ATP instance
+- Learn how to download client credentials for your ATP instance
 - Explore credentials wallet file information
 - Connect to your ATP instance with SQL Developer
 - Connect to your ATP instance with Oracle ML Notebooks
 
-## Downloading the Client Credentials (wallet)
+## Module 1:  Downloading the Client Credentials (wallet)
 
 1. The connection wallet provides the only authentication information that
 can be used to connect to your ATP database. This wallet must be
@@ -24,7 +24,7 @@ select **Download Client Credentials:**
 3. Specify a password of your choice for the wallet. Note that this
 password is separate from the **Admin** user password created earlier
 (but the same password can be used). Make sure you know where the file
-gets downloaded to so you can find in on your system.
+gets downloaded to so you can find it on your system.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.30%20PM.png](./media/image3.png)
 
@@ -33,12 +33,12 @@ Details page to download the credentials:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.36%20PM.png](./media/image4.png)
 
-5. Which opens up a screen where the Wallet can be downloaded as well as
+5. This step opens up a screen where the wallet can be downloaded as well as
 connection strings be copied from (more on this in other modules)
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.23.44%20PM.png](./media/image5.png)
 
-## Examining the Wallet File
+## Module 2:  Examining the Wallet File
 
 1. Navigate to the location in your system where the file was downloaded
 (typically your DOWNLOADS directory). 
@@ -66,7 +66,7 @@ contained in the wallet. The files used in the labs are:
 4.  **ojdbc.properties** – points to the location of the wallet for jdbc
     connections
 
-## Connecting to the database using SQL Developer 
+## Module 3:  Connecting to the Database using SQL Developer 
 
 *(Make sure you are running the latest version of SQL Developer 18.4. Some older versions will not work with ATP, see lab introductions on how to install)*
 
@@ -144,9 +144,9 @@ process.
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.45%20PM.png](./media/image12.png)
 
-**You have successfully connected and run an operation against ATP with SQL Developer. We will use SQL Developer throughout other labs. **
+**You have successfully connected and run an operation against ATP with SQL Developer. We will use SQL Developer throughout other labs.**
 
-## Connecting to the database using OML
+## Module 4:  Connecting to the Database using Oracle Machine Learning (OML)
 
 Another tool that can be used to connect and develop in ATP is the
 included Oracle Machine Learning OML Notebook based environment. Because
@@ -236,6 +236,6 @@ Paragraphs** icon, as shown below:
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.29.55%20PM.png](./media/image22.png)
 
-** You have successfully connected and run an operation against ATP with Oracle OML. We will use OML in other labs.**
+**You have successfully connected and run an operation against ATP with Oracle OML. We will use OML in other labs.**
 
 ***END OF LAB***
