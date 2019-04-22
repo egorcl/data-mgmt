@@ -131,6 +131,7 @@ click F5 or the “Run Script” button as indicated below. Make sure you
 are connected to your database, per the last step on the previous
 process.
 
+```
     SELECT channel\_desc, TO\_CHAR(SUM(amount\_sold),'9,999,999,999')
     SALES$,  
     RANK() OVER (ORDER BY SUM(amount\_sold)) AS default\_rank,  
@@ -146,7 +147,7 @@ process.
     AND times.calendar\_month\_desc IN ('2000-09', '2000-10')  
     AND country\_iso\_code='US'  
     GROUP BY channel\_desc;
-
+```
 
 ![../Desktop/Screen%20Shot%202019-04-22%20at%2012.28.36%20PM.png](./media/image11.png)
 
