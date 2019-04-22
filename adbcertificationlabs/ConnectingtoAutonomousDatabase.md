@@ -1,6 +1,6 @@
-#Connecting to Autonomous Database
+# Connecting to Autonomous Database
 
-##Objectives
+## Objectives
 
 * Learn how to download client credentials for your ATP instance
 - Explore credentials wallet file information
