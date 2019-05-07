@@ -1,5 +1,5 @@
 ![](./media/adbtitle.png)
-# Lab :  Connecting to Autonomous Database
+# Connecting to Autonomous Database
 
 ## Table of Contents
 
