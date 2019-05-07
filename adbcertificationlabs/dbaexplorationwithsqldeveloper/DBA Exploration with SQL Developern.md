@@ -1,5 +1,5 @@
 ![](./media/adbtitle.png)
-# Lab :  DBA Exploration of ADB with SQL Developer
+# DBA Exploration of ADB with SQL Developer
 
 ## Table of Contents
 
@@ -116,18 +116,18 @@ you will see the screenshot for the **\_HIGH** plan.
 ![](media/804725f72580eac6209ea5e79300bd21.png)
 <p align="center">Figure 1-12</p>
 
-The last entry under **Resource Manager-\>Statistics** provides graphical views
+12. The last entry under **Resource Manager-\>Statistics** provides graphical views
 into system usage by plan user. Double click on Statistics and explore the
 different screens.
 
-12. The **Security** section will be very useful to DBA’s as they can explore all
+13. The **Security** section will be very useful to DBA’s as they can explore all
 the Profiles, and Roles defined in the system, and under **Users,** roles and
 system priviledges granted to the user. Spend some time examining this area.
 
 ![](media/dab2281d80c02a668aae311babeb2816.png)
 <p align="center">Figure 1-13</p>
 
-13. The **Storage** section can be used to display all the storage characteristics
+14. The **Storage** section can be used to display all the storage characteristics
 of the ATP database. Most of these characteristics cannot be changed, as the
 Autonomous Database automatically manages and optimizes storage for the service.
 However the configurations can be examined. For example any data in a database
