@@ -1,10 +1,10 @@
 ![](./media/adbtitle.png)
-# Lab :  Provisioning an Autonomous Database
+# Provisioning an Autonomous Database
 
 
 ## Table of Contents
 
-- [Module 1:Learn how to login to the Oracle Cloud Console](#module-1--learn-how-to-login-to-the-oracle-cloud-console)
+- [Module 1: Learn how to login to the Oracle Cloud Console](#module-1--learn-how-to-login-to-the-oracle-cloud-console)
 - [Module 2: Learn how to provision a new Autonomous Database](#module-2--examining-the-wallet-file)
 
 ***** 
@@ -14,7 +14,7 @@
 In this section you will be provisioning an ATP database using the cloud
 console.
 
-Go to [cloud.oracle.com](https://cloud.oracle.com), click Sign In to sign in
+1. Go to [cloud.oracle.com](https://cloud.oracle.com), click Sign In to sign in
 with your Oracle Cloud account.
 
 ![](media/32da3d2a9a2066af692d571c6071efb6.png)
